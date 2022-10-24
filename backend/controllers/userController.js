@@ -28,14 +28,14 @@ const registerUser = asyncHandler(async (req, res) => {
         name,
         email,
         password: hashedPassword,
-        token: generateToken(user._id)
     })
 
     if (user) {
         res.status(201).json({
             _id: user._id,
             name: user.name,
-            email: user.email
+            email: user.email,
+            token: generateToken(user._id)
         })
     } else {
         res.status(400)
@@ -64,7 +64,12 @@ const loginUser = asyncHandler(async (req, res) => {
 })
 
 const getMe = asyncHandler(async (req, res) => {
-    res.send('me')
+    const user = {
+        id: req.user._id,
+        email: req.user.email,
+        name: req.user.name
+    }
+    res.status(200).json(user)
 })
 
 //generate token
