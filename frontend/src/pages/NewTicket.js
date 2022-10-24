@@ -38,7 +38,7 @@ function NewTicket() {
         e.preventDefault()
         dispatch(createTicket({ product, description }))
     }
-    console.log(product)
+
     if (isLoading) {
         return <Spinner />
     }
