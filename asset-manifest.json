@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Support-Ticket-System/static/css/main.1da3dbd3.css",
+    "main.js": "/Support-Ticket-System/static/js/main.c082438b.js",
+    "static/js/787.cda612ba.chunk.js": "/Support-Ticket-System/static/js/787.cda612ba.chunk.js",
+    "index.html": "/Support-Ticket-System/index.html",
+    "main.1da3dbd3.css.map": "/Support-Ticket-System/static/css/main.1da3dbd3.css.map",
+    "main.c082438b.js.map": "/Support-Ticket-System/static/js/main.c082438b.js.map",
+    "787.cda612ba.chunk.js.map": "/Support-Ticket-System/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1da3dbd3.css",
+    "static/js/main.c082438b.js"
+  ]
+}
