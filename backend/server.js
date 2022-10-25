@@ -21,17 +21,17 @@ app.get('/', (req, res) => {
 app.use('/api/users', require('./routes/userRoutes'))
 app.use('/api/tickets', require('./routes/ticketRoutes'))
 
-//Serve Frontend
-// if (process.env.NOTE_ENV === 'production') {
-//     //set build folder as static
-//     app.use(express.static(path.join(__dirname, '../frontend/build')))
+Serve Frontend
+if (process.env.NOTE_ENV === 'production') {
+    //set build folder as static
+    app.use(express.static(path.join(__dirname, '../frontend/build')))
 
-//     app.get('*', (req, res) => res.sendFile(__dirname, '../', 'frontend', 'build', 'index.html'))
-// } else {
-//     app.get('/', (req, res) => {
-//         res.status(200).send('api endpoint')
-//     })
-// }
+    app.get('*', (req, res) => res.sendFile(__dirname, '../', 'frontend', 'build', 'index.html'))
+} else {
+    app.get('/', (req, res) => {
+        res.status(200).send('api endpoint')
+    })
+}
 
 
 app.use(errorHandler)
