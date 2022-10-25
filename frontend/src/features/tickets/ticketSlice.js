@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import { FaStackOverflow } from 'react-icons/fa'
 import ticketService from './ticketService'
 
 const initialState = {

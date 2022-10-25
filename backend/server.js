@@ -31,13 +31,13 @@ if (process.env.NODE_ENV === 'production') {
     app.get('*', (_, res) => {
         res.sendFile(path.join(__dirname, '../frontend/build/index.html'))
     })
-    // } else {
-    //     app.get('/', (_, res) => {
-    //         res.status(200).json({ message: 'Welcome to the Support Desk API' })
-    //     })
-    // }
+} else {
+    app.get('/', (_, res) => {
+        res.status(200).json({ message: 'Welcome to the Support Desk API' })
+    })
+}
 
-    //
-    app.use(errorHandler)
+//
+app.use(errorHandler)
 
-    app.listen(PORT, () => console.log(`Server running on ${PORT}`))
+app.listen(PORT, () => console.log(`Server running on ${PORT}`))
