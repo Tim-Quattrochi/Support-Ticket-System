@@ -1,4 +1,4 @@
-const path = require('path')
+// const path = require('path')
 const express = require('express')
 const colors = require('colors')
 const dotenv = require('dotenv').config()
@@ -22,16 +22,16 @@ app.use('/api/users', require('./routes/userRoutes'))
 app.use('/api/tickets', require('./routes/ticketRoutes'))
 
 //Serve Frontend
-if (process.env.NOTE_ENV === 'production') {
-    //set build folder as static
-    app.use(express.static(path.join(__dirname, '../frontend/build')))
+// if (process.env.NOTE_ENV === 'production') {
+//     //set build folder as static
+//     app.use(express.static(path.join(__dirname, '../frontend/build')))
 
-    app.get('*', (req, res) => res.sendFile(__dirname, '../', 'frontend', 'build', 'index.html'))
-} else {
-    app.get('/', (req, res) => {
-        res.status(200).send('api endpoint')
-    })
-}
+//     app.get('*', (req, res) => res.sendFile(__dirname, '../', 'frontend', 'build', 'index.html'))
+// } else {
+//     app.get('/', (req, res) => {
+//         res.status(200).send('api endpoint')
+//     })
+// }
 
 
 app.use(errorHandler)
