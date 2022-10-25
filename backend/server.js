@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 app.use('/api/users', require('./routes/userRoutes'))
 app.use('/api/tickets', require('./routes/ticketRoutes'))
 
-Serve Frontend
+// Serve Frontend
 if (process.env.NOTE_ENV === 'production') {
     //set build folder as static
     app.use(express.static(path.join(__dirname, '../frontend/build')))
