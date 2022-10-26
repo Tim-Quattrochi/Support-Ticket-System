@@ -1,3 +1,7 @@
+# About
+
+This was a great learning experience for me. I am a current Kenzie Academy student who is learning full stack web development using the MERN stack. I completed Brad Travers's Udemy course on my break. I solidified my knowledge in React routing using React-router-dom v6, nested routes, fetching data from the express backend. On the back end I solidified my knowledge in creating Schemas with Mongoose, Express, Express router, JWT, creating protected API routes, Hashing and salting passwords with bcrypt. Utilizing Postman to test those routes, deploying to Heroku and much more! I definitely plan to add more features to it!
+
 # Support Ticket System
 
 ## Features
