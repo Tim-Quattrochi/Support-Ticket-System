@@ -21,7 +21,7 @@ This was a great learning experience for me. I am a current Kenzie Academy stude
 
 Support Ticket System uses a number of open source projects to work properly:
 
-- [node.js] - evented I/O for the backend
+
 - [MongoDB] - Store Users/Tickets/Notes
 - [node.js] - evented I/O for the backend
 - [Express] - fast node.js network app framework
