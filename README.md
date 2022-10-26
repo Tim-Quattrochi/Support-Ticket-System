@@ -15,16 +15,17 @@
 
 ## Tech
 
-Dillinger uses a number of open source projects to work properly:
+Support Ticket System uses a number of open source projects to work properly:
 
 - [node.js] - evented I/O for the backend
 - [MongoDB] - Store Users/Tickets/Notes
+- [node.js] - evented I/O for the backend
 - [Express] - fast node.js network app framework
 - [React] - JS framework for client-side
 
 ## Installation
 
-Support Ticket requires [Node.js](https://nodejs.org/) to run.
+Support Ticket Sysyem requires [Node.js](https://nodejs.org/) to run.
 
 Install the dependencies and devDependencies and start the server.
 
